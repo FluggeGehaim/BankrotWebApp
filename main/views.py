@@ -1,7 +1,21 @@
+from calendar import c
 from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
 
+
 def index(request):
-    return HttpResponse('Hello,Kitty!')
+    context = {"pagename": "BankrotСпец - Главная", 
+               "content": "Имущество с Торгов"}
+
+    return render(request, "main/index.html", context)
+
+
+def about(request):
+    context = {
+        "pagename": "BankrotСпец - О нас",
+        "content": "О нас", 
+        "text_about_us": "Тестовый текст , информация о ресурсе"
+        }
+    return render(request, "main/about.html", context)
