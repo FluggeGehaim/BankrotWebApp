@@ -34,7 +34,7 @@ class BiddingCateories(models.Model):
         verbose_name = "Формат Аукциона"
 
     def __str__(self):
-        return self.name
+        return self.format_bidding
 
 
 class Lots(models.Model):
@@ -69,6 +69,7 @@ class Lots(models.Model):
     category = models.ForeignKey(
         to=Categories, on_delete=models.CASCADE, verbose_name="Категория лота"
     )
+    place = models.CharField(max_length=150,blank=False,null=False,default='Уточняется',verbose_name='Местоположение')
 
     class Meta:
 
