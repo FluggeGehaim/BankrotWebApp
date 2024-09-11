@@ -1,1 +1,206 @@
-[{"model": "goods.lots", "pk": 1, "fields": {"name": "Погрузчик, Марка JCB,3CX SITEMASTER, зав.номер JCB 3CX SMAO2265675, г.р.з.3901 16АА, 2014 г.в.", "slug": "pogruzchik-marka-jcb3cx-sitemaster-zavnomer-jcb-3cx-smao2265675-grz3901-16aa-2014-gv", "description": "зав.номер JCB 3CX SMAO2265675, г.р.з.3901 16АА, 2014 г.в., ном.двигателя: SD32040551U1782114, цвет: желтый.", "image": "", "price": "5938778.00", "application_date": "2024-08-12", "bidding_date": "2024-08-12", "url_etp": "http://test-url.ru", "format_bidding": 1, "category": 10, "place": "Уточняется"}}, {"model": "goods.lots", "pk": 2, "fields": {"name": "Автомобиль легковой, марка: BMW, модель: 3 Series", "slug": "avtomobil-legkovoj-marka-bmw-model-3-series", "description": "VIN: X4X3A19470J673760, год изготовления: 2014, цвет – серый металлик", "image": "", "price": "1266407.00", "application_date": "2024-08-22", "bidding_date": "2024-08-22", "url_etp": "http://test-url.ru", "format_bidding": 1, "category": 9, "place": "Казань"}}, {"model": "goods.lots", "pk": 3, "fields": {"name": "BMW 520d xDrive, 2018 г.в.", "slug": "bmw-520d-xdrive-2018-gv", "description": "VIN) X4XJC59450WB54723", "image": "", "price": "3035070.00", "application_date": "2024-07-28", "bidding_date": "2024-07-28", "url_etp": "http://test-url.ru", "format_bidding": 2, "category": 9, "place": "Москва"}}, {"model": "goods.lots", "pk": 4, "fields": {"name": "Транспортное средство BMW 523D", "slug": "transportnoe-sredstvo-bmw-523d", "description": "VIN WBAJC32000WB96349, 2018", "image": "", "price": "3002466.00", "application_date": "2024-08-21", "bidding_date": "2024-08-21", "url_etp": "http://test-url.ru", "format_bidding": 1, "category": 9, "place": "Владивосток"}}, {"model": "goods.lots", "pk": 5, "fields": {"name": "Автомобиль марки MINI (BMW) модель Cooper 2017 г.в", "slug": "avtomobil-marki-mini-bmw-model-cooper-2017-gv", "description": "VIN-номер WMWXM510302F41692", "image": "", "price": "1550000.00", "application_date": "2024-08-15", "bidding_date": "2024-08-15", "url_etp": "http://test-url.ru", "format_bidding": 1, "category": 9, "place": "г.Жуковский"}}, {"model": "goods.lots", "pk": 6, "fields": {"name": "Полуприцеп ТСП 94183-0000010", "slug": "polupricep-tsp-94183-0000010", "description": "VIN Z7H941830С0000276, ГРЗ АУ 8588 72, 2012 г.в.", "image": "", "price": "1800000.00", "application_date": "2024-08-19", "bidding_date": "2024-08-19", "url_etp": "http://test-url.ru", "format_bidding": 1, "category": 14, "place": "Нижневартовск"}}, {"model": "goods.lots", "pk": 7, "fields": {"name": "ТОЙОТА ЛЕНД КРУЗЕР ПРАДО 150, 2013 г.в.,VIN: JTEBU3FJ605051709", "slug": "tojota-lend-kruzer-prado-150-2013-gvvin-jtebu3fj605051709", "description": "государственный регистрационный знак Т899АУ777. Цвет белый", "image": "", "price": "3500000.00", "application_date": "2024-08-23", "bidding_date": "2024-08-23", "url_etp": "http://test-url.ru", "format_bidding": 1, "category": 9, "place": "Москва"}}, {"model": "goods.lots", "pk": 8, "fields": {"name": "Экскаватор HYUNDAI R200W-7, 2011 года", "slug": "ekskavator-hyundai-r200w-7-2011-goda", "description": "заводской номер машины (рамы):HH1HN604KB0002414; двигатель №: 26467521; коробка передач №: 2 HL2902126197;цвет: серый, желтый; вид движителя: колесный; мощность двигателя, кВт (л.с.): 114(155); конструктивная масса, кг: 20500; максимальная конструктивная скорость, км/ч: 33.Предприятие-изготовитель (страна): Hyundai Heavy Industries CO LTD (Корея,Республика).", "image": "", "price": "5684400.00", "application_date": "2024-08-09", "bidding_date": "2024-08-09", "url_etp": "http://test-url.ru", "format_bidding": 1, "category": 10, "place": "Кемерово"}}, {"model": "goods.lots", "pk": 9, "fields": {"name": "Экскаватор гусеничный HYUNDAI R210LC-7", "slug": "ekskavator-gusenichnyj-hyundai-r210lc-7", "description": "VIN отсутствует, ГРЗ 72ТК8860, 2011 г.в.", "image": "", "price": "2700000.00", "application_date": "2024-08-19", "bidding_date": "2024-08-19", "url_etp": "http://test-url.ru", "format_bidding": 1, "category": 10, "place": "Сургут"}}, {"model": "goods.lots", "pk": 10, "fields": {"name": "Легковой автомобиль, марка: Ягуар, модель: XJ, год изготовления: 2010", "slug": "legkovoj-avtomobil-marka-yaguar-model-xj-god-izgotovleniya-2010", "description": "VIN: SAJAA26J0AMV00104, цвет: серый, мощность двигателя 470,56 л.с , тип двигателя –бензиновый, ПТС: 77YH962850, г/н: В358УУ77.", "image": "", "price": "514408.00", "application_date": "2024-08-19", "bidding_date": "2024-08-19", "url_etp": "http://test-url.ru", "format_bidding": 1, "category": 9, "place": "Санкт-Петербург"}}, {"model": "goods.lots", "pk": 11, "fields": {"name": "Полуприцеп ТСП 94182-0000010 (трал), 2008г", "slug": "polupricep-tsp-94182-0000010-tral-2008g", "description": "Полуприцеп ТСП 94182-0000010 (трал), 2008г", "image": "", "price": "1395000.00", "application_date": "2024-08-19", "bidding_date": "2024-08-19", "url_etp": "http://test-url.ru", "format_bidding": 1, "category": 14, "place": "Сургут"}}, {"model": "goods.lots", "pk": 12, "fields": {"name": "Тягач RENAULT PREMIUM 380.19T", "slug": "tyagach-renault-premium-38019t", "description": "VIN X9P25GPA000016773, 2012 года выпуска, гос. рег. знак. О 438 РК 174 (в наличии 2 единицы)", "image": "", "price": "3000000.00", "application_date": "2024-08-06", "bidding_date": "2024-08-06", "url_etp": "http://test-url.ru", "format_bidding": 1, "category": 13, "place": "Челябинская область, г. Копейск"}}]
+[
+  {
+    "model": "goods.lots",
+    "pk": 1,
+    "fields": {
+      "name": "JCB,3CX SITEMASTER, JCB 3CX SMAO2265675,",
+      "slug": "pogruzchik-marka-jcb3cx-sitemaster-zavnomer-jcb-3cx-smao2265675-grz3901-16aa-2014-gv",
+      "description": "JCB 3CX SMAO2265675,",
+      "image": "",
+      "price": "5938778.00",
+      "application_date": "2024-08-12",
+      "bidding_date": "2024-08-12",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 1,
+      "category": 10,
+      "place": "none"
+    }
+  },
+  {
+    "model": "goods.lots",
+    "pk": 2,
+    "fields": {
+      "name": "BMW, 3 Series",
+      "slug": "avtomobil-legkovoj-marka-bmw-model-3-series",
+      "description": "VIN: X4X3A19470J673760, ",
+      "image": "",
+      "price": "1266407.00",
+      "application_date": "2024-08-22",
+      "bidding_date": "2024-08-22",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 1,
+      "category": 9,
+      "place": "none"
+    }
+  },
+  {
+    "model": "goods.lots",
+    "pk": 3,
+    "fields": {
+      "name": "BMW 520d xDrive, 2018",
+      "slug": "bmw-520d-xdrive-2018-gv",
+      "description": "VIN) X4XJC59450WB54723",
+      "image": "",
+      "price": "3035070.00",
+      "application_date": "2024-07-28",
+      "bidding_date": "2024-07-28",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 2,
+      "category": 9,
+      "place": "none"
+    }
+  },
+  {
+    "model": "goods.lots",
+    "pk": 4,
+    "fields": {
+      "name": "BMW 523D",
+      "slug": "transportnoe-sredstvo-bmw-523d",
+      "description": "VIN WBAJC32000WB96349, 2018",
+      "image": "",
+      "price": "3002466.00",
+      "application_date": "2024-08-21",
+      "bidding_date": "2024-08-21",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 1,
+      "category": 9,
+      "place": "none"
+    }
+  },
+  {
+    "model": "goods.lots",
+    "pk": 5,
+    "fields": {
+      "name": " MINI (BMW)Cooper 2017пїЅ",
+      "slug": "avtomobil-marki-mini-bmw-model-cooper-2017-gv",
+      "description": "VIN-WMWXM510302F41692",
+      "image": "",
+      "price": "1550000.00",
+      "application_date": "2024-08-15",
+      "bidding_date": "2024-08-15",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 1,
+      "category": 9,
+      "place": "none"
+    }
+  },
+  {
+    "model": "goods.lots",
+    "pk": 6,
+    "fields": {
+      "name": "94183-0000010",
+      "slug": "polupricep-tsp-94183-0000010",
+      "description": "VIN Z7H9418300000276,8588 72, 2012",
+      "image": "",
+      "price": "1800000.00",
+      "application_date": "2024-08-19",
+      "bidding_date": "2024-08-19",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 1,
+      "category": 14,
+      "place": "none"
+    }
+  },
+  {
+    "model": "goods.lots",
+    "pk": 7,
+    "fields": {
+      "name": "150, 2013 ,VIN: JTEBU3FJ605051709",
+      "slug": "tojota-lend-kruzer-prado-150-2013-gvvin-jtebu3fj605051709",
+      "description": "899777",
+      "image": "",
+      "price": "3500000.00",
+      "application_date": "2024-08-23",
+      "bidding_date": "2024-08-23",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 1,
+      "category": 9,
+      "place": "none"
+    }
+  },
+  {
+    "model": "goods.lots",
+    "pk": 8,
+    "fields": {
+      "name": "HYUNDAI R200W-7, 2011",
+      "slug": "ekskavator-hyundai-r200w-7-2011-goda",
+      "description": "HH1HN604KB0002414;  26467521; 2 HL2902126197пїЅ.):vy Industries CO LTD ",
+      "image": "",
+      "price": "5684400.00",
+      "application_date": "2024-08-09",
+      "bidding_date": "2024-08-09",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 1,
+      "category": 10,
+      "place": "none"
+    }
+  },
+  {
+    "model": "goods.lots",
+    "pk": 9,
+    "fields": {
+      "name": " HYUNDAI R210LC-7",
+      "slug": "ekskavator-gusenichnyj-hyundai-r210lc-7",
+      "description": "VIN",
+      "image": "",
+      "price": "2700000.00",
+      "application_date": "2024-08-19",
+      "bidding_date": "2024-08-19",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 1,
+      "category": 10,
+      "place": "none"
+    }
+  },
+  {
+    "model": "goods.lots",
+    "pk": 10,
+    "fields": {
+      "name": " XJ, 2010",
+      "slug": "legkovoj-avtomobil-marka-yaguar-model-xj-god-izgotovleniya-2010",
+      "description": "VIN: SAJAA26J0AMV00104, 470,5677YH962850,.",
+      "image": "",
+      "price": "514408.00",
+      "application_date": "2024-08-19",
+      "bidding_date": "2024-08-19",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 1,
+      "category": 9,
+      "place": "none"
+    }
+  },
+  {
+    "model": "goods.lots",
+    "pk": 11,
+    "fields": {
+      "name": "94182-0000010 , 2008",
+      "slug": "polupricep-tsp-94182-0000010-tral-2008g",
+      "description": "94182-0000010 , 2008",
+      "image": "",
+      "price": "1395000.00",
+      "application_date": "2024-08-19",
+      "bidding_date": "2024-08-19",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 1,
+      "category": 14,
+      "place": "none"
+    }
+  },
+  {
+    "model": "goods.lots",
+    "pk": 12,
+    "fields": {
+      "name": "ENAULT PREMIUM 380.19T",
+      "slug": "tyagach-renault-premium-38019t",
+      "description": "VIN X9P25GPA000016773, 2012 ",
+      "image": "",
+      "price": "3000000.00",
+      "application_date": "2024-08-06",
+      "bidding_date": "2024-08-06",
+      "url_etp": "http://test-url.ru",
+      "format_bidding": 1,
+      "category": 13,
+      "place": "none"
+    }
+  }
+]

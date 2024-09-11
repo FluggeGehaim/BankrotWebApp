@@ -21,7 +21,7 @@ class Categories(models.Model):
         return self.name
 
 
-class BiddingCateories(models.Model):
+class BiddingCategories(models.Model):
     format_bidding = models.CharField(
         max_length=80, blank=False, null=False, verbose_name="Формат аукциона"
     )
@@ -62,7 +62,7 @@ class Lots(models.Model):
     )
     url_etp = models.URLField(blank=False, null=False, verbose_name="Ссылка на торги")
     format_bidding = models.ForeignKey(
-        to=BiddingCateories,
+        to=BiddingCategories,
         on_delete=models.PROTECT,
         verbose_name="Формат проведения торгов",
     )

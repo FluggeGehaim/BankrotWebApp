@@ -1,1 +1,58 @@
-[{"model": "goods.categories", "pk": 8, "fields": {"name": "¬се лоты", "slug": "vse-loty"}}, {"model": "goods.categories", "pk": 9, "fields": {"name": "Ћегковой транспорт", "slug": "legkovoj-transport"}}, {"model": "goods.categories", "pk": 10, "fields": {"name": "Ёкскаваторы", "slug": "ekskavatory"}}, {"model": "goods.categories", "pk": 11, "fields": {"name": "Ёкскаваторы-погрузчики", "slug": "ekskavatory-pogruzchiki"}}, {"model": "goods.categories", "pk": 12, "fields": {"name": "—амосвалы", "slug": "samosvaly"}}, {"model": "goods.categories", "pk": 13, "fields": {"name": "“€гачи", "slug": "tyagachi"}}, {"model": "goods.categories", "pk": 14, "fields": {"name": "ѕолуприцепы", "slug": "polupricepy"}}]
+[
+  {
+    "model": "goods.categories",
+    "pk": 8,
+    "fields": {
+      "name": "vse-loty",
+      "slug": "vse-loty"
+    }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 9,
+    "fields": {
+      "name": "legkovoj-transport",
+      "slug": "legkovoj-transport"
+    }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 10,
+    "fields": {
+      "name": "ekskavatory",
+      "slug": "ekskavatory"
+    }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 11,
+    "fields": {
+      "name": "ekskavatory-pogruzchiki",
+      "slug": "ekskavatory-pogruzchiki"
+    }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 12,
+    "fields": {
+      "name": "samosvaly",
+      "slug": "samosvaly"
+    }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 13,
+    "fields": {
+      "name": "tyagachi",
+      "slug": "tyagachi"
+    }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 14,
+    "fields": {
+      "name": "polupricepy",
+      "slug": "polupricepy"
+    }
+  }
+]

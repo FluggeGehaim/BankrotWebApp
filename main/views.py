@@ -1,4 +1,3 @@
-from calendar import c
 from django.http import HttpResponse
 from django.shortcuts import render
 

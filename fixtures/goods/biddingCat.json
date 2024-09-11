@@ -1,1 +1,18 @@
-[{"model": "goods.biddingcateories", "pk": 1, "fields": {"format_bidding": "Аукион", "slug": "aukion"}}, {"model": "goods.biddingcateories", "pk": 2, "fields": {"format_bidding": "Публичное предложение", "slug": "publichnoe-predlozhenie"}}]
+[
+  {
+    "model": "goods.biddingcateories",
+    "pk": 1,
+    "fields": {
+      "format_bidding": "aukion",
+      "slug": "aukion"
+    }
+  },
+  {
+    "model": "goods.biddingcateories",
+    "pk": 2,
+    "fields": {
+      "format_bidding": "publichnoe-predlozhenie",
+      "slug": "publichnoe-predlozhenie"
+    }
+  }
+]
