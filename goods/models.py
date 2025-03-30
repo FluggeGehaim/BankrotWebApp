@@ -1,10 +1,10 @@
 from django.db import models
 
+
 # Create your models here.
 
 
 class Categories(models.Model):
-
     name = models.CharField(max_length=150, unique=True, verbose_name="Название")
     slug = models.SlugField(
         max_length=150, unique=True, blank=True, null=True, verbose_name="URL"
@@ -15,7 +15,7 @@ class Categories(models.Model):
         db_table = "Category"
         # имя для админки
         verbose_name = "Категорию"
-        verbose_name_plural = "Категории"
+        verbose_name_plural = "Категорий"
 
     def __str__(self):
         return self.name
@@ -38,7 +38,6 @@ class BiddingCategories(models.Model):
 
 
 class Lots(models.Model):
-
     name = models.CharField(
         max_length=150, blank=False, null=False, verbose_name="Наименование"
     )
@@ -69,10 +68,10 @@ class Lots(models.Model):
     category = models.ForeignKey(
         to=Categories, on_delete=models.CASCADE, verbose_name="Категория лота"
     )
-    place = models.CharField(max_length=150,blank=False,null=False,default='Уточняется',verbose_name='Местоположение')
+    place = models.CharField(max_length=150, blank=False, null=False, default='Уточняется',
+                             verbose_name='Местоположение')
 
     class Meta:
-
         db_table = "goods_lots"
 
         verbose_name = "Лот"
@@ -80,3 +79,6 @@ class Lots(models.Model):
 
     def __str__(self):
         return self.name
+
+    def display_valid_id(self):
+        return f"{self.id:05}"
