@@ -3,7 +3,7 @@
     "model": "goods.categories",
     "pk": 8,
     "fields": {
-      "name": "vse-loty",
+      "name": "Все лоты",
       "slug": "vse-loty"
     }
   },
@@ -11,7 +11,7 @@
     "model": "goods.categories",
     "pk": 9,
     "fields": {
-      "name": "legkovoj-transport",
+      "name": "Легковой транспорт",
       "slug": "legkovoj-transport"
     }
   },
@@ -19,7 +19,7 @@
     "model": "goods.categories",
     "pk": 10,
     "fields": {
-      "name": "ekskavatory",
+      "name": "Экскаваторы",
       "slug": "ekskavatory"
     }
   },
@@ -27,7 +27,7 @@
     "model": "goods.categories",
     "pk": 11,
     "fields": {
-      "name": "ekskavatory-pogruzchiki",
+      "name": "Экскаваторы-погрузчики",
       "slug": "ekskavatory-pogruzchiki"
     }
   },
@@ -35,7 +35,7 @@
     "model": "goods.categories",
     "pk": 12,
     "fields": {
-      "name": "samosvaly",
+      "name": "Самосвалы",
       "slug": "samosvaly"
     }
   },
@@ -43,7 +43,7 @@
     "model": "goods.categories",
     "pk": 13,
     "fields": {
-      "name": "tyagachi",
+      "name": "Тягачи",
       "slug": "tyagachi"
     }
   },
@@ -51,8 +51,16 @@
     "model": "goods.categories",
     "pk": 14,
     "fields": {
-      "name": "polupricepy",
+      "name": "Полуприцепы",
       "slug": "polupricepy"
+    }
+  },
+  {
+    "model": "goods.categories",
+    "pk": 15,
+    "fields": {
+      "name": "Водный транспорт",
+      "slug": "vodnyj-transport"
     }
   }
 ]

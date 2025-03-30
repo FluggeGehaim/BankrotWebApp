@@ -1,0 +1,1 @@
+[{"model": "goods.biddingcategories", "pk": 1, "fields": {"format_bidding": "Аукцион с повышением цены", "slug": "aukcion-s-povisheniem-ceni"}}, {"model": "goods.biddingcategories", "pk": 2, "fields": {"format_bidding": "Публичное предложение", "slug": "publichnoe-predlozhenie"}}]

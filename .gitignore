@@ -2,6 +2,10 @@
 venv/
 .pylintrc
 __pycache__/
+.mypy_cache
+.env
+venv
+lots_images
 
 #ide stuff
 .vscode
