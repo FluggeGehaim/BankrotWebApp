@@ -73,9 +73,9 @@ class Lots(models.Model):
 
     class Meta:
         db_table = "goods_lots"
-
         verbose_name = "Лот"
         verbose_name_plural = "Лоты"
+        ordering = ("id",)
 
     def __str__(self):
         return self.name
