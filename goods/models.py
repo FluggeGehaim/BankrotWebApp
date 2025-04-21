@@ -81,4 +81,4 @@ class Lots(models.Model):
         return self.name
 
     def display_valid_id(self):
-        return f"{self.id:05}"
+        return f"{self.id:06}"
