@@ -1,15 +1,19 @@
 from django.core.paginator import Paginator
 from django.shortcuts import render, get_list_or_404
 from goods.models import Lots
+from goods.utils import search
 
 
-def catalog(request, category_slug):
+def catalog(request, category_slug=None):
     page = request.GET.get("page", 1)
     # on_sale = request.GET.get("on_sale", None)
     order_by = request.GET.get("order_by", None)
+    query = request.GET.get("q", None)
     
     if category_slug == "all":
         lots = Lots.objects.all()
+    elif query:
+        lots = search.q_search(query)
     else:
         lots = get_list_or_404(Lots.objects.filter(category__slug=category_slug))
         
