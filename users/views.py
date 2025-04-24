@@ -1,13 +1,45 @@
-from django.shortcuts import render, get_list_or_404
+from django.http import HttpResponseRedirect
+from django.shortcuts import redirect, render, get_list_or_404
+from users.form import UserLoginForm, UserRegistrationForm
+from django.contrib import auth
+from django.urls import reverse
 
 
 def login(request):
-    context = {}
+    if request.method == 'POST':
+        form = UserLoginForm(data=request.POST)
+        if form.is_valid():
+            username = request.POST['username']
+            password = request.POST['password']
+            user = auth.authenticate(username=username, password=password)
+            if user:
+                auth.login(request, user)
+                return HttpResponseRedirect(reverse('main:index'))
+    else:
+        form = UserLoginForm()
+
+    context = {
+        'tittle': 'BakrotWeb - Авторизация',
+        'form': form,
+    }
     return render(request, 'users/login.html', context)
 
 
 def registration(request):
-    context = {}
+    if request.method == 'POST':
+        form = UserRegistrationForm(data=request.POST)
+        if form.is_valid():
+            form.save()
+            user = form.instance
+            auth.login(request, user)
+            return HttpResponseRedirect(reverse('main:index'))
+    else:
+        form = UserRegistrationForm()
+        
+    context = {
+        'tittle': 'BakrotWeb - Авторизация',
+        'form': form,
+    }
     return render(request, 'users/registration.html', context)
 
 
@@ -17,5 +49,5 @@ def profile(request):
 
 
 def logout(request):
-    context = {}
-    return render(request, 'users/logout.html', context)
+    auth.logout(request)
+    return redirect(reverse('main:index'))
