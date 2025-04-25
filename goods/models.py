@@ -72,7 +72,7 @@ class Lots(models.Model):
                              verbose_name='Местоположение')
 
     class Meta:
-        db_table = "goods_lots"
+        db_table = "lots"
         verbose_name = "Лот"
         verbose_name_plural = "Лоты"
         ordering = ("id",)
