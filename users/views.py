@@ -1,6 +1,8 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect, render, get_list_or_404
+
 from carts.models import Cart
+
 from users.form import UserLoginForm, UserRegistrationForm, ProfileForm
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
@@ -53,6 +55,7 @@ def registration(request):
             if session_key:
                     Cart.objects.filter(session_key=session_key).update(user=user)
                     
+
             messages.success(request, f" {user.username}, вы успешно зарегестрировались и авторизовались.")
             return HttpResponseRedirect(reverse('main:index'))
     else:
@@ -87,7 +90,6 @@ def logout(request):
     auth.logout(request)
     return redirect(reverse('main:index'))
 
-
-
 def users_cart(request):
     return render(request, 'users/users-cart.html')
+
