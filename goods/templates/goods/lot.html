@@ -2,6 +2,9 @@
 {% load static %}
 
 
+{% block modal_cart %}
+    {% include "includes/cart_button.html" %}
+{% endblock %}
 
 {% block content %}
     <div class="container mt-5">
@@ -38,7 +41,10 @@
                 <p class="card-text">Цена: <strong>{{ lot.price }} Руб.</strong></p>
                 <h5 class="card-title">{{lot.name}}</h5>
                 <p class="card-text">{{lot.description}}</p>
-                <a href="#" class="btn btn-dark add-to-cart">Добавить в корзину</a>
+                <a href="{% url "cart:cart_add" %}" class="btn btn-dark add-to-cart"
+                data-product-id="{{ lot.id }}">
+                {% csrf_token %}
+                Добавить в корзину</a>
             </div>
         </div>
     </div>
