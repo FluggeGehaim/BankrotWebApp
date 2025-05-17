@@ -1,7 +1,7 @@
 from django.db import models
+from django.urls import reverse
 
 
-# Create your models here.
 
 
 class Categories(models.Model):
@@ -79,6 +79,10 @@ class Lots(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_absolute_url(self):
+        return reverse("goods:lot", kwargs={"lot_slug": self.slug})
+    
 
     def display_valid_id(self):
         return f"{self.id:06}"
