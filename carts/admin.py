@@ -24,3 +24,6 @@ class CartAdmin(admin.ModelAdmin):
     
     def lot_display(self, obj):
         return str(obj.lot.name)
+
+        user_display.short_description = "Пользователь"
+        product_display.short_description = "Лот"

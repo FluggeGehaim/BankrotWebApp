@@ -1,8 +1,9 @@
 from django.http import HttpResponseRedirect
-from django.shortcuts import redirect, render, get_list_or_404
-
+from django.shortcuts import redirect, render
+from django.db.models import Prefetch
 from carts.models import Cart
 
+from orders.models import Order, OrderItem
 from users.form import UserLoginForm, UserRegistrationForm, ProfileForm
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
@@ -24,6 +25,11 @@ def login(request):
                 messages.success(request, f" {username}, вы успешно авторизовались.")
                 
                 if session_key:
+                     # delete old authorized user carts
+                    forgot_carts = Cart.objects.filter(user=user)
+                    if forgot_carts.exists():
+                        forgot_carts.delete()
+                    # add new authorized user carts from anonimous session
                     Cart.objects.filter(session_key=session_key).update(user=user)
                     
                 redirect_page = request.POST.get('next', None)
@@ -77,10 +83,18 @@ def profile(request):
             return HttpResponseRedirect(reverse('user:profile'))
     else:
         form = ProfileForm(instance=request.user)
+        
+    orders = Order.objects.filter(user=request.user).prefetch_related(
+                Prefetch(
+                    "orderitem_set",
+                    queryset=OrderItem.objects.select_related("product"),
+                )
+            ).order_by("-id")
 
     context = {
         'tittle': 'BakrotWeb - Авторизация',
         'form': form,
+        'orders': orders,
     }
     return render(request, 'users/profile.html', context)
 
