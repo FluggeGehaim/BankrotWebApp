@@ -1,23 +1,22 @@
-from django.http import HttpResponse
-from django.shortcuts import render
-
-from goods.models import Categories
-# Create your views here.
+from django.views.generic import TemplateView
 
 
-def index(request):
 
-    context = {"pagename": "BankrotСпец - Главная", 
-               "content": "Имущество с Торгов",
-               }
+class IndexView(TemplateView):
+    template_name = "main/index.html"
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["pagename"] = "BankrotСпец - Главная"
+        context["content"] = "Имущество с Торгов"
+        return context
 
-    return render(request, "main/index.html", context)
-
-
-def about(request):
-    context = {
-        "pagename": "BankrotСпец - О нас",
-        "content": "О нас", 
-        "text_about_us": "Тестовый текст , информация о ресурсе"
-        }
-    return render(request, "main/about.html", context)
+class AboutView(TemplateView):
+    template_name = "main/about.html"
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["pagename"] = "BankrotСпец - О нас"
+        context["content"] = "О нас"
+        context["text_about_us"] = "Тестовый текст , информация о ресурсе"
+        return context
