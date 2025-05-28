@@ -1,5 +1,4 @@
 from django.http import HttpResponseRedirect
-from django.core.cache import cache
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView, UpdateView,TemplateView
@@ -70,6 +69,7 @@ class UserRegistrationView(CreateView):
             return HttpResponseRedirect(self.get_success_url())
         
     
+    
 class UserProfileView(LoginRequiredMixin,CacheMixin, UpdateView):
     template_name = "users/profile.html"
     form_class = ProfileForm
@@ -85,6 +85,7 @@ class UserProfileView(LoginRequiredMixin,CacheMixin, UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["pagename"] = "BakrotWeb - Профиль"
+
         
         orders = Order.objects.filter(user=self.request.user).prefetch_related(
                 Prefetch(
@@ -92,8 +93,8 @@ class UserProfileView(LoginRequiredMixin,CacheMixin, UpdateView):
                     queryset=OrderItem.objects.select_related("product"),
                 )
             ).order_by("-id")
-            
         context["orders"] = self.set_get_cahce(orders, f"user_{self.request.user.id}_orders", 60)
+
         return context
     
 class UserCartView(TemplateView):
