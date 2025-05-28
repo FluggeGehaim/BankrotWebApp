@@ -2,10 +2,11 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView, UpdateView,TemplateView
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect
 from django.db.models import Prefetch
 from carts.models import Cart
 
+from common.mixins import CacheMixin
 from orders.models import Order, OrderItem
 from users.form import UserLoginForm, UserRegistrationForm, ProfileForm
 from django.contrib import auth, messages
@@ -68,7 +69,8 @@ class UserRegistrationView(CreateView):
             return HttpResponseRedirect(self.get_success_url())
         
     
-class UserProfileView(LoginRequiredMixin, UpdateView):
+    
+class UserProfileView(LoginRequiredMixin,CacheMixin, UpdateView):
     template_name = "users/profile.html"
     form_class = ProfileForm
     success_url = reverse_lazy("users:profile")
@@ -83,12 +85,16 @@ class UserProfileView(LoginRequiredMixin, UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["pagename"] = "BakrotWeb - Профиль"
-        context["orders"] = Order.objects.filter(user=self.request.user).prefetch_related(
+
+        
+        orders = Order.objects.filter(user=self.request.user).prefetch_related(
                 Prefetch(
                     "orderitem_set",
                     queryset=OrderItem.objects.select_related("product"),
                 )
             ).order_by("-id")
+        context["orders"] = self.set_get_cahce(orders, f"user_{self.request.user.id}_orders", 60)
+
         return context
     
 class UserCartView(TemplateView):
